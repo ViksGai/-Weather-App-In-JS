@@ -1,0 +1,69 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: hsl(200, 100%, 85%);
+  color: hsl(204, 64%, 28%);
+  font-family: sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  &__left {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-right: 2px solid hsl(200, 100%, 10%);
+  }
+  &__right {
+    display: grid;
+    // justify-content: space-between;
+    width: 50%;
+    gap: 0.5rem;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+  }
+}
+
+.wether-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: contain;
+}
+
+.wether-icon.large {
+  width: 5rem;
+  height: 5rem;
+}
+
+.left-part {
+  &__current-temp {
+    font-size: 2rem;
+    margin-left: 1rem;
+  }
+}
+
+.info-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__label {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.75rem;
+  }
+  &__value {
+    font-size: 1.125rem;
+  }
+  &__sub-info {
+    font-size: 0.875rem;
+  }
+}
