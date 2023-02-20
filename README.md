@@ -1,1 +1,1 @@
-# -Weather-App-In-JS
+# The Weather App using JS
